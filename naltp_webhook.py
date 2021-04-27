@@ -173,4 +173,4 @@ while i < len(match):
 
 output_json_str = json.dumps(output_dict)
 
-exit = subprocess.run(["curl", "-X", "POST", "-H", "Content-Type: application/json", "-d", output_json_str, WEBHOOK_URL])
+exit_code = subprocess.run(["curl", "-X", "POST", "-H", "Content-Type: application/json", "-d", output_json_str, WEBHOOK_URL])
