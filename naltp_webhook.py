@@ -6,7 +6,7 @@ import requests
 import json
 import subprocess
 
-WEBHOOK_URL = 'https://discord.com/api/webhooks/836555414329491506/4K-GNBHtgaK43kOcBBMXPZ6ZyFvYcCaHIELXMf1XA_myOUs0MJhnF3Tz2UoFxtL4z7Xz'
+WEBHOOK_URL = ''
 
 def format_score(score1: int, score2: int) -> []:
     output = []
@@ -80,9 +80,7 @@ for url in eu_links:
 
     match.append([])
     # grab the json data from the eu
-    print(url[0][0:18] + 'data/' + url[0][18:len(url[0])])
     url_response = requests.get(url[0][0:18] + 'data/' + url[0][18:len(url[0])])
-    print(url_response)
     url_json = url_response.json()
     if (i == 0): # set team 1 & 2 names in a vars
         t1_name = url_json['teams'][0]['name']
