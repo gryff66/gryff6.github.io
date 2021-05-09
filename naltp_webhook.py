@@ -6,7 +6,7 @@ import requests
 import json
 import subprocess
 
-WEBHOOK_URL = ''
+WEBHOOK_URL = 'https://discord.com/api/webhooks/836813524491698176/MJIUuU-t_r4-ic9RVDXTTosRyqZLBwkE2FXoCPpYWbxDaCwuZl9qlJz4EJNXXxT8ZDvX'
 
 def format_score(score1: int, score2: int) -> []:
     output = []
